@@ -20,3 +20,9 @@ const data = [
     hobi: "Billiard",
   },
 ];
+
+const searchElement = document.querySelector("#input");
+let searchValue = "";
+searchElement.addEventListener("input", (event) => {
+  searchValue = event.target.value;
+});
